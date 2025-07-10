@@ -1,50 +1,47 @@
 
 import React, { useState, useEffect } from 'react';
-import { Code, Database, Cloud, Brain } from 'lucide-react';
+import { Code, Database, Globe, Brain } from 'lucide-react';
 
 const About = () => {
-  const [typedText, setTypedText] = useState('');
-  const fullText = "Computer Science student with strong skills in Java, Python, C, web development, cloud computing, and machine learning. Actively seeking software development or DevOps roles to apply and expand my technical expertise.";
+  const [currentText, setCurrentText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const fullText = "Passionate software engineer with expertise in full-stack development, cloud computing, and emerging technologies. I love building scalable solutions and contributing to open-source projects.";
 
   useEffect(() => {
-    let index = 0;
-    const timer = setInterval(() => {
-      if (index < fullText.length) {
-        setTypedText(fullText.slice(0, index + 1));
-        index++;
-      } else {
-        clearInterval(timer);
-      }
-    }, 50);
-
-    return () => clearInterval(timer);
-  }, []);
+    if (currentIndex < fullText.length) {
+      const timeout = setTimeout(() => {
+        setCurrentText(prev => prev + fullText[currentIndex]);
+        setCurrentIndex(prev => prev + 1);
+      }, 50);
+      return () => clearTimeout(timeout);
+    }
+  }, [currentIndex, fullText]);
 
   const highlights = [
     {
-      icon: <Code className="w-8 h-8" />,
+      icon: <Code className="w-6 h-6" />,
       title: "Full-Stack Development",
-      description: "Proficient in React, Node.js, Java, Python, and modern web technologies"
+      description: "Building end-to-end applications with modern frameworks"
     },
     {
-      icon: <Database className="w-8 h-8" />,
-      title: "Database Management",
-      description: "Experience with MySQL, MongoDB, DynamoDB for scalable data solutions"
+      icon: <Database className="w-6 h-6" />,
+      title: "Cloud Architecture",
+      description: "Designing scalable systems on AWS and Google Cloud"
     },
     {
-      icon: <Cloud className="w-8 h-8" />,
-      title: "Cloud & DevOps",
-      description: "AWS Lambda, Docker, GitHub workflows for automated deployments"
+      icon: <Globe className="w-6 h-6" />,
+      title: "DevOps & Automation",
+      description: "Streamlining deployment and infrastructure management"
     },
     {
-      icon: <Brain className="w-8 h-8" />,
-      title: "Machine Learning",
-      description: "CNN models, Streamlit applications, and AI-driven solutions"
+      icon: <Brain className="w-6 h-6" />,
+      title: "AI & Machine Learning",
+      description: "Exploring intelligent solutions and automation"
     }
   ];
 
   return (
-    <section id="about" className="py-20 relative">
+    <section id="about" className="py-20 bg-slate-800/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -54,46 +51,56 @@ const About = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="space-y-6">
               <div className="bg-slate-800/50 p-8 rounded-2xl backdrop-blur-sm border border-slate-700">
-                <h3 className="text-2xl font-semibold text-white mb-4">My Journey</h3>
-                <p className="text-gray-300 leading-relaxed min-h-[120px]">
-                  {typedText}
+                <p className="text-gray-300 text-lg leading-relaxed min-h-[120px]">
+                  {currentText}
                   <span className="animate-pulse">|</span>
                 </p>
               </div>
+              
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-4 rounded-xl border border-blue-400/30">
+                  <h4 className="text-blue-400 font-semibold mb-2">Education</h4>
+                  <p className="text-gray-300 text-sm">B.E. Computer Science</p>
+                  <p className="text-gray-400 text-xs">BNM Institute of Technology</p>
+                </div>
+                <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 p-4 rounded-xl border border-purple-400/30">
+                  <h4 className="text-purple-400 font-semibold mb-2">Location</h4>
+                  <p className="text-gray-300 text-sm">Bengaluru, India</p>
+                  <p className="text-gray-400 text-xs">Open to Remote Work</p>
+                </div>
+              </div>
             </div>
 
-            <div className="space-y-6">
-              <div className="bg-slate-800/50 p-6 rounded-xl backdrop-blur-sm border border-slate-700">
-                <h4 className="text-lg font-semibold text-white mb-2">Location</h4>
-                <p className="text-blue-400">Bengaluru, India</p>
-              </div>
-              <div className="bg-slate-800/50 p-6 rounded-xl backdrop-blur-sm border border-slate-700">
-                <h4 className="text-lg font-semibold text-white mb-2">Education</h4>
-                <p className="text-gray-300">B.E Computer Science & Engineering</p>
-                <p className="text-blue-400">BNM Institute of Technology (2022-Present)</p>
-              </div>
-              <div className="bg-slate-800/50 p-6 rounded-xl backdrop-blur-sm border border-slate-700">
-                <h4 className="text-lg font-semibold text-white mb-2">Focus Areas</h4>
-                <p className="text-gray-300">Web Development, Cloud Computing, Machine Learning</p>
+            <div className="flex justify-center">
+              <div className="relative">
+                <div className="w-80 h-80 rounded-2xl overflow-hidden border-4 border-gradient-to-r from-blue-400 to-purple-400 shadow-2xl">
+                  <img 
+                    src="/lovable-uploads/3537a01c-d5d9-4149-9207-d02aaa8ebe39.png" 
+                    alt="Firoz Khan - Profile Picture"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl -z-10 animate-pulse"></div>
               </div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {highlights.map((item, index) => (
-              <div
+              <div 
                 key={index}
                 className="bg-slate-800/50 p-6 rounded-xl backdrop-blur-sm border border-slate-700
-                  hover:border-blue-400/50 transition-all duration-300 hover:transform hover:scale-105
-                  group cursor-pointer"
+                  hover:border-blue-400/50 transition-all duration-300 group hover:transform hover:scale-105"
               >
-                <div className="text-blue-400 mb-4 group-hover:text-purple-400 transition-colors duration-300">
+                <div className="text-blue-400 mb-4 group-hover:text-purple-400 transition-colors">
                   {item.icon}
                 </div>
-                <h4 className="text-lg font-semibold text-white mb-2">{item.title}</h4>
+                <h3 className="text-white font-semibold mb-2 group-hover:text-blue-400 transition-colors">
+                  {item.title}
+                </h3>
                 <p className="text-gray-400 text-sm">{item.description}</p>
               </div>
             ))}

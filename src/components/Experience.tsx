@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Calendar, MapPin, ExternalLink } from 'lucide-react';
 
@@ -29,7 +28,7 @@ const Experience = () => {
       company: "Bharat Intern",
       role: "Web Developer Intern",
       period: "July 2024 - August 2024",
-      location: "Bengaluru",
+      location: "Remote",
       description: "Built web applications with HTML, CSS, JavaScript. Enhanced user experience and responsiveness of front-end interfaces.",
       technologies: ["HTML", "CSS", "JavaScript", "Web Development"],
       color: "from-purple-500 to-pink-500"

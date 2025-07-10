@@ -30,7 +30,8 @@ const Skills = () => {
     "DevOps - Approteknow",
     "Samsung Prism Python Programming",
     "Google Cloud Study Jam",
-    "Prompt Engineering - Udemy"
+    "Prompt Engineering - Udemy",
+    "Java Spring Framework"
   ];
 
   return (
