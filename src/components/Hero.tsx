@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Download } from 'lucide-react';
 
@@ -33,7 +32,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 animate-pulse"></div>
@@ -68,6 +67,7 @@ const Hero = () => {
             </div>
           </div>
 
+          
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Firoz Khan</span>
           </h1>

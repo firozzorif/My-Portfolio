@@ -41,24 +41,6 @@ const Projects = () => {
       github: "https://github.com/firozzorif",
       demo: "#",
       image: "🎬"
-    },
-    {
-      title: "AWS Lambda File Manager",
-      description: "Serverless application using AWS Lambda and S3 for automated file management with encryption layers.",
-      technologies: ["AWS Lambda", "S3", "Serverless", "DevOps"],
-      category: "backend",
-      github: "https://github.com/firozzorif",
-      demo: "#",
-      image: "☁️"
-    },
-    {
-      title: "DeepSeek Chatbot",
-      description: "Advanced chatbot using Python, PyQt for UI, and DeepSeek base model for NLP with enhanced conversational flows.",
-      technologies: ["Python", "PyQt", "NLP", "DeepSeek"],
-      category: "ai",
-      github: "https://github.com/firozzorif",
-      demo: "#",
-      image: "🤖"
     }
   ];
 
