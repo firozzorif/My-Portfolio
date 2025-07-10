@@ -6,7 +6,7 @@ const Hero = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const titles = [
-    'Software Engineer',
+    'Software Developer',
     'Full-Stack Developer',
     'DevOps Engineer',
     'AI Engineer'
