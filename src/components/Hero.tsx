@@ -54,6 +54,20 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
+          {/* Profile Picture */}
+          <div className="flex justify-center mb-8">
+            <div className="relative">
+              <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-400 to-purple-400 shadow-2xl">
+                <img 
+                  src="/lovable-uploads/3537a01c-d5d9-4149-9207-d02aaa8ebe39.png" 
+                  alt="Firoz Khan - Profile Picture"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -inset-2 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full -z-10 animate-pulse"></div>
+            </div>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Firoz Khan</span>
           </h1>

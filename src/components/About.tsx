@@ -51,16 +51,16 @@ const About = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="mb-16">
             <div className="space-y-6">
-              <div className="bg-slate-800/50 p-8 rounded-2xl backdrop-blur-sm border border-slate-700">
+              <div className="bg-slate-800/50 p-8 rounded-2xl backdrop-blur-sm border border-slate-700 max-w-4xl mx-auto">
                 <p className="text-gray-300 text-lg leading-relaxed min-h-[120px]">
                   {currentText}
                   <span className="animate-pulse">|</span>
                 </p>
               </div>
               
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
                 <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-4 rounded-xl border border-blue-400/30">
                   <h4 className="text-blue-400 font-semibold mb-2">Education</h4>
                   <p className="text-gray-300 text-sm">B.E. Computer Science</p>
@@ -71,19 +71,6 @@ const About = () => {
                   <p className="text-gray-300 text-sm">Bengaluru, India</p>
                   <p className="text-gray-400 text-xs">Open to Remote Work</p>
                 </div>
-              </div>
-            </div>
-
-            <div className="flex justify-center">
-              <div className="relative">
-                <div className="w-80 h-80 rounded-2xl overflow-hidden border-4 border-gradient-to-r from-blue-400 to-purple-400 shadow-2xl">
-                  <img 
-                    src="/lovable-uploads/3537a01c-d5d9-4149-9207-d02aaa8ebe39.png" 
-                    alt="Firoz Khan - Profile Picture"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl -z-10 animate-pulse"></div>
               </div>
             </div>
           </div>
