@@ -39,8 +39,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      details: ["hello.firozkhan@outlook.com"],
-      action: "mailto:hello.firozkhan@outlook.com"
+      details: ["firozzorif2003@gmail.com", "hello.firozkhan@gmail.com"],
+      action: "mailto:firozzorif2003@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
