@@ -54,7 +54,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:firozzorif2003@gmail.com"
+                href="mailto:hello.firozkhan@outlook.com"
                 className="p-2 bg-slate-800 text-gray-400 rounded-lg hover:bg-slate-700
                   hover:text-blue-400 transition-all duration-300"
               >
@@ -87,10 +87,10 @@ const Footer = () => {
               <div>
                 <p className="text-gray-400 text-sm">Email</p>
                 <a
-                  href="mailto:firozzorif2003@gmail.com"
+                  href="mailto:hello.firozkhan@outlook.com"
                   className="text-blue-400 hover:text-blue-300 transition-colors"
                 >
-                  firozzorif2003@gmail.com
+                  hello.firozkhan@outlook.com
                 </a>
               </div>
               <div>

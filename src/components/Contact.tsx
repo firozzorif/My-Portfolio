@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
@@ -39,19 +38,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      details: ["firozzorif2003@gmail.com", "hello.firozkhan@gmail.com"],
-      action: "mailto:firozzorif2003@gmail.com"
+      details: "hello.firozkhan@outlook.com",
+      action: "mailto:hello.firozkhan@outlook.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      details: ["+91 73040 09104"],
+      details: "+91 73040 09104",
       action: "tel:+917304009104"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
-      details: ["Bengaluru, Karnataka", "India"],
+      details: "Bengaluru, Karnataka, India",
       action: "#"
     }
   ];
@@ -84,17 +83,15 @@ const Contact = () => {
                     <div className="text-blue-400 mt-1">{info.icon}</div>
                     <div>
                       <h4 className="font-semibold text-white mb-1">{info.title}</h4>
-                      {info.details.map((detail, detailIndex) => (
-                        <p key={detailIndex} className="text-gray-400 text-sm">
-                          {info.action.startsWith('mailto:') || info.action.startsWith('tel:') ? (
-                            <a href={info.action} className="hover:text-blue-400 transition-colors">
-                              {detail}
-                            </a>
-                          ) : (
-                            detail
-                          )}
-                        </p>
-                      ))}
+                      <p className="text-gray-400 text-sm">
+                        {info.action.startsWith('mailto:') || info.action.startsWith('tel:') ? (
+                          <a href={info.action} className="hover:text-blue-400 transition-colors">
+                            {info.details}
+                          </a>
+                        ) : (
+                          info.details
+                        )}
+                      </p>
                     </div>
                   </div>
                 ))}
