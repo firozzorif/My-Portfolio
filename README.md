@@ -1,7 +1,3 @@
-Got it! Here's the updated README with your email and the link to your live portfolio:
-
----
-
 # My Portfolio
 
 Welcome to my personal portfolio project! This repository showcases my skills, projects, and experiences as a developer. It is designed to highlight my abilities in web development, including front-end and back-end technologies. The portfolio serves as both a personal introduction and a demonstration of my work.
