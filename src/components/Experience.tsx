@@ -8,7 +8,7 @@ const Experience = () => {
       company: "Appzera",
       role: "Intern",
       period: "March 2025 - June 2025",
-      location: "Remote",
+      location: "Bengaluru",
       description: "During my internship, I developed a chatbot using Python, PyQt for the UI, and the DeepSeek base model for NLP, focusing on enhancing conversational flows and performance.",
       technologies: ["Python", "PyQt", "NLP", "DeepSeek"],
       color: "from-blue-500 to-cyan-500"
@@ -28,7 +28,7 @@ const Experience = () => {
       company: "Bharat Intern",
       role: "Web Developer Intern",
       period: "July 2024 - August 2024",
-      location: "Remote",
+      location: "Bengaluru",
       description: "Built web applications with HTML, CSS, JavaScript. Enhanced user experience and responsiveness of front-end interfaces.",
       technologies: ["HTML", "CSS", "JavaScript", "Web Development"],
       color: "from-purple-500 to-pink-500"
