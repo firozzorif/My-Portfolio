@@ -12,7 +12,6 @@ const Projects = () => {
       technologies: ["React", "Cloud Computing", "Encryption", "HMAC"],
       category: "fullstack",
       github: "https://github.com/firozzorif",
-      demo: "#",
       image: "🔐"
     },
     {
@@ -21,7 +20,6 @@ const Projects = () => {
       technologies: ["Python", "CNN", "Streamlit", "Machine Learning"],
       category: "ai",
       github: "https://github.com/firozzorif",
-      demo: "#",
       image: "🌱"
     },
     {
@@ -30,7 +28,6 @@ const Projects = () => {
       technologies: ["React", "API Integration", "Responsive Design"],
       category: "frontend",
       github: "https://github.com/firozzorif",
-      demo: "#",
       image: "🍽️"
     },
     {
@@ -39,7 +36,6 @@ const Projects = () => {
       technologies: ["React", "JavaScript", "Interactive UI"],
       category: "frontend",
       github: "https://github.com/firozzorif",
-      demo: "#",
       image: "🎬"
     }
   ];
