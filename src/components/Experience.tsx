@@ -15,7 +15,7 @@ const Experience = () => {
     },
     {
       type: "internship",
-      company: "Approteknow",
+      company: "Appteknow",
       role: "DevOps Intern",
       period: "August 2024 - September 2024",
       location: "Bengaluru",
