@@ -27,7 +27,7 @@ const Skills = () => {
 
   const certifications = [
     "Red Hat System Administration",
-    "DevOps - Approteknow",
+    "DevOps - Appteknow",
     "Samsung Prism Python Programming",
     "Google Cloud Study Jam",
     "Prompt Engineering - Udemy",
