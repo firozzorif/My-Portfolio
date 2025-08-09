@@ -5,7 +5,7 @@ import { Code, Database, Globe, Brain } from 'lucide-react';
 const About = () => {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = "Passionate software engineer with expertise in full-stack development, cloud computing, and emerging technologies. I love building scalable solutions and contributing to open-source projects.";
+  const fullText = "Passionate software engineer with expertise in full-stack development, data analysis, cloud computing, and emerging technologies. I enjoy building scalable solutions, uncovering insights from data, and contributing to open-source projects.";
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -35,8 +35,8 @@ const About = () => {
     },
     {
       icon: <Brain className="w-6 h-6" />,
-      title: "AI & Machine Learning",
-      description: "Exploring intelligent solutions and automation"
+      title: "Data & Intelligence",
+      description: "Exploring intelligent solutions, data-driven insights, and automation"
     }
   ];
 
